@@ -1,0 +1,78 @@
+﻿Classes/Methods
+
+Program.cs
+{
+	Main()
+	{
+		Game Object
+		Run()
+	}
+}
+
+using System;
+using System.IO;
+using System.Collections.Generic;
+using static System.ConsoleColor;
+using static System.Console;
+
+Game.cs
+{
+	int HighScore, UserScore, BoardSize, boardRows, boardColumns, NumberOfMoves
+    int[,] GameBoard
+    Random object //add a random 2 or 4
+    enum Direction //for arrow key input
+    string hsFILE //highscore file location
+
+	Game()
+	{
+		GetHighScore();
+		//Default constructor sets default values
+	}
+
+	Run()
+	{
+		GenerateRandomNumber();
+		DisplayBoard();
+		GameOver()
+		Update(Direction direction)
+		//
+	}
+
+	DisplayBoard()
+	{
+		NumberColors()
+		//clears the board, writes the updated board, checks if there is a new highscore, then writes the info below the board
+	}
+
+	Update(Direction direction)
+	{
+		Update(int[,] gBoard, Direction direction, out int addedPoints)
+		//determines if the board changed and adds points to the score
+	}
+
+	Update(int[,] gBoard, Direction direction, out int addedPoints)
+	{
+		//
+	}
+
+	GenerateRandomNumber()
+	{
+		//adds a 2 or 4 tile in an empty space
+	}
+
+	static ConsoleColor NumberColors(int tileNumber)
+	{
+		//sets the color for each tile based on the number value
+	}
+
+	GameOver()
+	{
+		Update(int[,] gBoard, Direction direction, out int addedPoints)
+		//returns true if the game is over
+	}
+
+	GetHighScore()
+	{
+		//gets and returns the high score number from a file
+	}
+}
